@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: min(10px, 2%);
+}
+
+/* Header */
+.header {
+    background-image: url(/img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: min(782px, 120vw);
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: min(55px, 6%);
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: min(50px, 5vw);
+    margin-left: auto;
+}
+
+.nav__menu a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Roboto';
+    font-size: min(14px, 3vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.nav__button {
+    width: min(100px, 20vw);
+    height: min(40px, 8vw);
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: min(14px, 3vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+.header-h1 {
+    margin-top: min(177px, 13vw);
+    text-align: center;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: min(72px, 8vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: min(3.6px, 3vw);
+    text-transform: uppercase;
+}
+
+.header-p {
+    margin: min(40px, 3vw) auto;
+    display: block;
+    text-align: center;
+    max-width: min(540px, 60vw);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: min(24px, 5vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.header-button {
+    display: block;
+    margin: min(55px, 4vw) auto;
+    width: min(160px, 30vw);
+    height: min(50px, 8vw);
+    border-radius: 6px;
+    background: #FFF;
+    color: #ED4C5C;
+    font-family: 'Roboto';
+    font-size: min(14px, 3vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* About */
+.about__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: min(94px, 10vw) 0;
+    gap: min(125px, 14vw);
+}
+
+.about__left {
+    max-width: min(445px, 60vw);
+}
+
+.about-h2 {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: min(36px, 7vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.about-p {
+    color: #000;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: min(14px, 4vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: min(21px, 5vw);
+}
+
+.about-link {
+    display: block;
+    color: #ED4C5C;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: min(14px, 4vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: min(10px, 5vw);
+}
+
+.about__right {
+    width: 100%;
+    max-width: 445px;
+}
+
+.about__right img {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+/* Possibilities */
+.possibilities {
+    background: #FAFAFA;
+    height: min(660px, 120vw);
+}
+
+.possibilities-h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: min(36px, 8vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: min(63px, 7vw);
+}
+
+.possibilities__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: min(30px, 4vw);
+    margin-top: min(63px, 7vw);
+}
+
+.possibilities__item {
+    position: relative;
+    min-width: 0;
+}
+
+.possibilities__img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.possibilities__img img {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+.possibilities__card {
+    position: absolute;
+    z-index: 2;
+    bottom: -40%;
+    left: 8%;
+    min-width: min(293px, 30vw);
+    min-height: min(198px, 20vw);
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card-h3 {
+    margin: min(26px, 3vw) auto;
+    text-align: center;
+    max-width: 229px;
+    color: #101010;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: min(18px, 5vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-p {
+    max-width: 229px;
+    margin: 0 auto;
+    color: #101010;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: min(12px, 4vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.card-link {
+    display: block;
+    color: #ED4C5C;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
+    cursor: pointer;
+    margin: min(12px, 3vw) auto;
+}
+
+/* tech */
+.tech {
+    background: #FFF;
+    height: min(500px, 110vw);
+}
+
+.tech-h2 {
+    text-align: center;
+    margin-top: min(63px, 7vw);
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: min(36px, 6vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tech__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: min(52px, 6vw) auto min(104px, 11vw);
+    gap: 8%;
+}
+
+.tech__item {
+    position: relative;
+    max-width: 255px;
+}
+
+.texh-h1 {
+    color: rgba(16, 16, 16, 0.08);
+    text-align: center;
+    font-family: 'Lato';
+    font-size: min(100px, 10vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tech__item img {
+    position: absolute;
+    top: 28%;
+    left: 33%;
+}
+
+.tech-h3 {
+    margin: min(15px, 4vw) auto min(15px, 4vw);
+    color: #101010;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: min(18px, 5vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tech-p {
+    max-width: 191px;
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: min(12px, 4vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* econ */
+.econ {
+    background: #ED4C5C;
+    height: min(500px, 110vw);
+}
+
+.econ__flex {
+    margin: min(95px, 10vw) auto min(95px, 10vw);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.econ__left {
+    max-width: 445px;
+    min-width: 0;
+}
+
+.econ-h2 {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: min(36px, 4vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: min(35px, 4vw);
+}
+
+.econ-p {
+    color: #FFF;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: min(14px, 3vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: min(35px, 4vw);
+}
+.econ__left svg {
+    margin-right: min(20px, 3vw);
+}
+.econ__right {
+    min-width: 0;
+}
+.econ__img {
+    width: 100%;
+    max-width: 445px;
+}
+.econ__img img {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+@media screen and (max-width: 1130px) {
+    .tech {
+        padding-top: min(140px, 14vw);
+        height: auto;
+    }
+    .possibilities {
+        height: auto;
+    }
+    .econ {
+        height: auto;
+    }
+    .econ__left svg {
+        margin-bottom: 10%;
+    }
+    .tech__item img {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .possibilities__card {
+        top: 30%;
+        left: 1%;
+        width: 230px;
+        height: 170px;
+    }
+    
+}
